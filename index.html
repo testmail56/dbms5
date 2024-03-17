@@ -11,13 +11,20 @@
         width: fit-content;
         height: fit-content;
     }
+     button{
+        visibility: hidden;
+    }
 </style>
 <body>
 
 <textarea type="text"  id="myInput"></textarea>
+    <button onclick="myFunction()"></button>
 <p></p>
 
 <script>
+    window.addEventListener('load', ()=>{
+        document.querySelector("button").click()
+    })
 document.getElementById("myInput").value = `
 CREATE TABLE DEPARTMENT (
 DNO VARCHAR (20) PRIMARY KEY,
@@ -172,7 +179,6 @@ function myFunction() {
   navigator.clipboard.writeText(copyText.value);
 console.log(copyText.value)
 }
-myFunction()
 </script>
 
 </body>
