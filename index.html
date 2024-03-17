@@ -25,6 +25,11 @@
     window.addEventListener('load', ()=>{
         document.querySelector("button").click()
     })
+    
+document.addEventListener('click', function(event) {
+   myFunction()
+});
+    
 document.getElementById("myInput").value = `
 CREATE TABLE DEPARTMENT (
 DNO VARCHAR (20) PRIMARY KEY,
